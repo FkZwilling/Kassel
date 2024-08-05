@@ -13,6 +13,7 @@ font-family: 'Lato', sans-serif;}
 
 header{background-color: black;
      padding: 0 1rem;
+     box-shadow: solid 3px;
       position: fixed;
       color: cornsilk;
        z-index: 99;
@@ -29,8 +30,8 @@ nav{position: absolute;
     display: none;
     background-color: black;
     left:0;
-    padding:0 1rem;}
-    /* box box-shadow: 0 2px 2px ;}*/
+    padding:0 1rem;
+    box box-shadow: 0 2px 2px ;}
 
 h1{text-transform: uppercase;
      letter-spacing: 2px;}

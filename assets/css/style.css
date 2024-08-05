@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{padding:0; margin:0; box-sizing: border-box;}
+
+body{min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+font-family: 'Lato', sans-serif;}
+
+header{background-color: black;
+     padding: 0 1rem;
+      position: fixed;
+      color: cornsilk;
+       z-index: 99;
+       width: 100%;
+display: flex;
+justify-content: space-between;
+align-items:baseline;}
+
+header a{text-decoration: none;
+     color: antiquewhite;}
+
+nav{position: absolute;
+    width:100%;
+    display: none;
+    background-color: black;
+    left:0;
+    padding:0 1rem;}
+    /* box box-shadow: 0 2px 2px ;}*/
+
+h1{text-transform: uppercase;
+     letter-spacing: 2px;}
+
+     #menu{font-size: 110%;
+    letter-spacing: 4px;
+list-style-type: none;}
+
+#menu > li{margin-bottom: 1em;}
+
+.active{border-bottom: 1px solid;}
+
+#nav-toggle:checked~nav{display: block;}
+
+#nav-toggle{display: none;}
+
+#logo {font-size: 280%;
+line-height: 75px;
+margin: 0.05rem;}
+
+main{margin-top: 79px}
+
+
+main section div h2 p{flex: 1 0 auto;
+    background-color: wheat;
+    margin-top: 75px;
+display: flex;
+flex-direction: column;}
+
+
+.info-main{font-size: 4vw;
+    background-color: azure;
+    opacity: 0.6;
+    border-radius: 25px;
+    height: 10%;
+    width: auto;
+     margin: 1.5%;
+     padding: 5vw;
+     }
+
+.img-main{margin: 1.5%;
+border-radius: 10%;
+}
+
+    #hero{background:url(../images/hero.jpg) no-repeat center center/cover ; width: 100%; height: 450px;}
+
+   #sights-img{background: url(../images/Castle.jpg) no-repeat center center/cover;height: 35vw; align-items: center;width: 100%;}
+
+   #parks-img{background: url(../images/Park.jpg) no-repeat center center/cover;height: 35vw; align-items: center; width: 100%;}
+
+   #museums-img{background: url(../images/Museum.jpg)no-repeat center center/cover ;height: 35vw; align-items: center; width:100%;}
+
+   #photos img{width: 100%;line-height: 1em;}
+
+   #photos {line-height: 0;}
+
+   #signup{position:absolute; top: 21%;left: 11%;line-height: 2;}
+
+   #signup-ul{list-style-type: none;}
+
+   #signup-form {
+    color: aliceblue;
+    background-color: black;
+    padding: 30px;
+   }
+
+   #signup-form{
+    color: blanchedalmond;
+    margin-bottom: 20px;
+   }
+
+   .check-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;}
+
+footer{background-color:black;
+    color:cornsilk;
+}
+
+footer > ul > li {line-height: 1.5;}
+
+footer a{text-decoration: none;color: inherit;}
+
+/*media queries*/
+
+@media screen and (min-width: 576px)
+{#photos {column-count: 2;
+column-gap: 0;}
+
+}
+    
+.articles{
+    display:flex;
+    flex-direction: row;}
+
+    #park-reverse{display: flex;
+        flex-direction: row-reverse;}
+
+        .info-main{width: 40%;
+        font-size: 2vw;}
+
+        #sights-img{height:25vw;width:50%;}
+
+        #museums-img{height:25vw;width:50%;}
+
+        #parks-img{height:25vw;width:50%;}
+
+@media  screen and (min-width:768px) {
+    /*header*/
+    nav{display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;}
+
+    #menu{display: flex;}
+
+    #menu > li {padding-left: 1rem;}
+
+    .nav-toggle-label{display: none;}
+
+    #logo{font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;}
+        
+        #photos{column-count: 3;}
+}
+
+   
+
+@media screen and (min-width: 992px)
+    {
+        #menu a:hover{
+    border-bottom: 1px solid;}
+    
+    #photos{column-count: 4;}
+
+footer a:hover{border-bottom: 1px solid;}
+        .join-button:hover{background-color: #3a3a3a;}
+}

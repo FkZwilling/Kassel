@@ -54,7 +54,7 @@ margin: 0.05rem;}
 main{margin-top: 79px}
 
 
-main section div h2 p{flex: 1 0 auto;
+main{flex: 1 0 auto;
     background-color: wheat;
     margin-top: 75px;
 display: flex;
@@ -118,6 +118,9 @@ border-radius: 10%;
 
 footer{background-color:black;
     color:cornsilk;
+    position: absolute;
+    bottom:0;
+    width:100%;
 }
 
 footer > ul > li {line-height: 1.5;}
